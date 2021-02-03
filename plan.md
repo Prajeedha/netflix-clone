@@ -1,0 +1,9 @@
+-Create HTML structure
+-Ceate Header
+-Style header
+-Create features section
+-Create Netflix Originals
+-Create Movies List
+-Create Trending now
+-Technology: HTML,JS ,CSS
+-Icons:fonr awesome

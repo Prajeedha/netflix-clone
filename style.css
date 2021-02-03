@@ -1,0 +1,179 @@
+
+body{
+    background-color:#111;
+    color:white;
+    font-family:'Helvetica Neue',Helvetica,Arial, Helvetica, sans-serif ;
+    margin:0;
+}
+
+.dropdown_container{
+    position: absolute;
+    top:100%;
+    right:0;
+    padding-top:3px;
+    display:none;
+}
+
+.dropdown{
+    background-color:black;
+    padding:5px;
+    border-radius:4px;
+      width:80px;
+
+}
+.dropdown span{
+    cursor:pointer;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position:absolute;
+    z-index: 100;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    right:0;
+    padding-top:15px;
+}
+.logo > img{
+    width:120px;
+
+}
+.profile{
+    position:relative;
+}
+.profile img{
+    width: 40px;
+    height:40px;
+ 
+}
+
+.profile:hover .dropdown_container{
+    display:block;
+} 
+.original_movies ,.movies_container{
+    padding-left:50px;
+    display:flex;
+    overflow-x:scroll;
+}
+.original_movies{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.original_movies::-webkit-scrollbar{
+    display:none;
+}
+.movies_container::-webkit-scrollbar{
+    display:none;
+}
+
+.original_movies img ,.original_movies img{
+ transition :all 0.2s ease-out;
+ cursor:pointer;
+}
+
+.original_movies img:hover,.original_movies img:hover{
+    transform: scale(1.1);
+}
+
+
+.original_movies img  {
+    margin-right:10px;
+    height:200px;
+    width:auto;
+}
+
+.movies_container img{
+    margin-right:10px;
+    width:200px;
+}
+
+img{
+    width:100px;
+}
+.featured{
+    height:350px;
+    position: relative;
+    background-image: url('https://image.tmdb.org/t/p/original//3lBDg3i6nn5R2NKFCJ6oKyUo2j5.jpg');
+    background-size: 100% 100%;
+   padding: 20px 0 0 30px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   background-position: center;
+}
+
+.featured h2 {
+    
+    font-size: 40px;
+    margin:0;
+    z-index:10;
+}
+.netflixOriginals h2 ,.movies_header h2{
+  padding-left:30px;
+}
+
+.featured .featured_buttons button{
+   font-size: 16px;
+   color:white;
+   background-color: rgba(109,109,110,0.7);
+   border:none;
+   padding:8px 24px;
+   border-radius: 4px;  
+}
+.featured .featured_buttons .button_play{
+    color:black;
+    background-color: white;
+
+}
+
+.featured .featured_buttons{
+    z-index:10;
+}
+
+.featured::after{
+    content:'';
+    bottom:0;
+    left:0;
+    right:0;
+    position:absolute;
+    height:7rem;
+    z-index: 10;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
+
+.button_play i{
+    margin-right: 6px;
+}
+
+.featured .featured_description{
+    max-width: 350px;
+    font-weight:400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    z-index:10;
+    padding-bottom: 15px;
+}
+.modal-body iframe{
+    width:100%;
+}
+.modal-content{
+    background-color: #111;
+}
+.modal-body span{
+color:#333;
+width:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.background-wrapper{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
